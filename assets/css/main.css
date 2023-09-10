@@ -260,6 +260,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		padding: 10px 0;
 	}
 
 		.row > * {
@@ -325,10 +326,6 @@ input, select, textarea {
 		.row > .col-4 {
 			width: 33.33333%;
 		}
-		.row > .col-4team {
-			width: 50%;
-		}
-
 
 		.row > .off-4 {
 			margin-left: 33.33333%;
@@ -2105,14 +2102,6 @@ input, select, textarea {
 			ul.buttons.stacked li:first-child {
 				padding: 0;
 			}
-		
-
-		ul.buttonscontact > li{
-			margin: 0 auto;
-			width: 40%;
-			}
-
-
 				
 /* Table */
 
@@ -3361,6 +3350,7 @@ input, select, textarea {
 
 	}
 
+
 	.products img{
 		height: 200px;
 		width: 250px;
@@ -3369,11 +3359,6 @@ input, select, textarea {
 	.image{
 		width: 400px;
 		height: 400px;
-	}
-
-	.team{
-		padding-top: 100px;
-		padding-bottom: 100px;
 	}
 
 	.treatments h3, .major h2{
@@ -3385,3 +3370,25 @@ input, select, textarea {
 		font-weight: 400;
 	}
 	
+	.team img {
+	width: 100%;
+	max-width: 350px;
+	padding: 15px;
+	}
+
+	.team{
+		display: flex;
+		padding: 0 50px;
+		justify-content: center;
+		align-items: center;
+		gap: 36px;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.team{
+			display: block;
+			padding: 0px;
+		}
+
+	}
