@@ -3384,11 +3384,66 @@ input, select, textarea {
 		gap: 36px;
 	}
 
-	@media screen and (max-width: 980px) {
+	.our-details {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 5%;
+	  }
 
+	  .our-details h4{
+		font-weight: 700;	
+	}
+
+	.bold-details > li {
+		font-weight: 700;
+	}
+
+	input[type="checkbox"] {
+		appearance: checkbox !important;
+	}
+
+	.services{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	h4.services{
+		display:flex
+
+	}
+
+	.content h1{
+		font-size: 1.75em
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.our-details {
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 15px;
+		  }
+	}
+
+
+	@media screen and (max-width: 980px) {
 		.team{
 			display: block;
 			padding: 0px;
 		}
+		
+		  .our-details .map {
+			max-width: 250px;
+		  }
+		  .google-maps iframe {
+			width: 100% !important;
+			height: 100% !important;
+		  }
+	}
 
+	@media screen and (max-width: 736px) {
+		.services{
+			flex-direction: column;
+			align-items: flex-start;
+		  }	
 	}
